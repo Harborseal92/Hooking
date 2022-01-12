@@ -17,6 +17,6 @@ Java.perform(function(){
 });
 """
 
-process = frida.get_usb_device().attach('com.shinhan.sbanking')
+process = frida.get_usb_device().attach('패키지명')
 script = process.create_script(jscode)
 script.load()
