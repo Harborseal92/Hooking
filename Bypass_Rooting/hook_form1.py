@@ -4,7 +4,7 @@ import frida
 
 jscode = """
 Java.perform(function(){
-     var testa = Java.use('com.shinhan.spplatform.main.CommonBaseActivity');
+     var testa = Java.use('액티비티명');
      testa.isRootingFound.implementation = function(){
      console.log("clear");
      return true;
@@ -14,7 +14,7 @@ Java.perform(function(){
 });
 """
 
-process = frida.get_usb_device().attach('com.shinhan.sbanking')
+process = frida.get_usb_device().attach('패키지명')
 script = process.create_script(jscode)
 script.load()
 input()
@@ -32,6 +32,6 @@ input()
 
 #------------------------------------------------------------
 
-    # var testa = Java.use('com.shinhan.spplatform.main.SolWebActivity');
+    # var testa = Java.use('액티비티명');
     # testa.onFailDataService.msg = 1;
     # console.log("clear");
