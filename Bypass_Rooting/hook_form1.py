@@ -19,7 +19,7 @@ script = process.create_script(jscode)
 script.load()
 input()
 
-# Java.choose("com.shinhan.spplatform.main.SolWebActivity",{
+# Java.choose("@@.액티비티명",{
     # onMatch : function(test){
     #     test.onFailDataService(1);
     # },
