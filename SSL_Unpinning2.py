@@ -1,7 +1,4 @@
-
-
-}, 0);
-mport frida, sys
+import frida, sys
 
 jscode = """
 setTimeout(function(){
